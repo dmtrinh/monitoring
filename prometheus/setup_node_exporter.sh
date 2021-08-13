@@ -1,5 +1,15 @@
 #!/bin/bash
 
+if [ -z "$1" ]
+then
+  echo "First, find the specific release you want @"
+  echo "  https://github.com/prometheus/node_exporter/releases"
+  echo
+  echo "Syntax:"
+  echo "  ./setup_node_exporter.sh <url-to-node-exporter-release>"
+  exit
+fi
+
 echo "Retrieving Node_exporter package..."
 curl -LO $1
 
