@@ -25,6 +25,9 @@ sudo cp node_exporter.service /etc/systemd/system
 sudo systemctl daemon-reload
 echo "... Done!"
 
+# Uncomment the line below only if you want node_exporter to automatically start even after server reboot
+#sudo systemctl enable node_exporter
+
 echo "Attempting to start Node_exporter..."
 sudo systemctl restart node_exporter
 sudo systemctl status node_exporter
