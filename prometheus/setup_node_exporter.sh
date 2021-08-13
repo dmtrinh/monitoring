@@ -5,8 +5,11 @@ then
   echo "First, find the specific release you want @"
   echo "  https://github.com/prometheus/node_exporter/releases"
   echo
-  echo "Syntax:"
-  echo "  ./setup_node_exporter.sh <url-to-node-exporter-release>"
+  echo "Usage:"
+  echo "  $0 <url-to-node-exporter-release>"
+  echo
+  echo "Exxample:"
+  echo "  $0 https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz"
   exit
 fi
 
