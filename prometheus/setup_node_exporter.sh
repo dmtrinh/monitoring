@@ -8,7 +8,7 @@ then
   echo "Usage:"
   echo "  $0 <url-to-node-exporter-release>"
   echo
-  echo "Exxample:"
+  echo "Example:"
   echo "  $0 https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz"
   exit
 fi
